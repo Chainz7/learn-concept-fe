@@ -7,17 +7,15 @@ export default {
       "headline-1": "2.2rem",
       "headline-2": "1.8rem",
       body: "1.6rem",
-      caption: "1.2rem",
+      caption: "1.4rem",
     },
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
     },
     colors: {
-      primary: {
-        light: "#94fdf5",
-        default: "#66fcf1",
-        dark: "#52cac1",
-      },
+      primary: "#7ACEF7",
+      secondary: "#95d8f9",
+      tertiary: "#62a5c6",
       background: {
         light: "#1C2A50",
         default: "#0f172a",
@@ -26,6 +24,7 @@ export default {
       text: {
         main: "#e2e8f0",
         paragraph: "#94A3B8",
+        "paragraph-fade": "rgba(148, 163, 184, .25)",
         "color-1": "#66fcf1",
         "color-2": "#A5B4FC",
       },
@@ -33,13 +32,17 @@ export default {
     extend: {
       spacing: {
         136: "136rem",
+        "1/10": "10%",
+        "9/10": "90%",
       },
     },
     screens: {
-      "md-min": { min: "810px" },
-      "md-max": { max: "810px" },
       "sm-min": { min: "620px" },
       "sm-max": { max: "620px" },
+      "lay-min": { min: "900px" },
+      "lay-max": { max: "900px" },
+      "md-min": { min: "1169px" },
+      "md-max": { max: "1169px" },
       "xl-min": { min: "1360px" },
       "xl-max": { max: "1360px" },
     },

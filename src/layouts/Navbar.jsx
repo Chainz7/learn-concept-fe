@@ -6,8 +6,8 @@ const Navbar = () => {
 
   const [isNavActive, setNavActive] = useState(false);
 
-  const isLinkActive = (pathname) => {
-    return location.pathname === pathname;
+  const isLinkActive = (prefix) => {
+    return location.pathname.startsWith(prefix);
   };
 
   const toggleNavActive = () => {
@@ -16,17 +16,13 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-screen flex justify-center p-5 px-6 pr-9 bg-background-default font-roboto text-headline-2 font-normal text-text-main sm-max:p-0">
+      <nav className="w-screen h-1/10 flex justify-center p-5 px-6 pr-9 bg-background-default font-roboto text-headline-2 font-normal text-text-main sm-max:px-0">
         <div className="w-screen flex justify-between items-center xl-min:w-136 sm-max:justify-center">
-          <ul className="flex items-center justify-center gap-8 md-max:text-caption sm-max:hidden">
+          <ul className="flex items-center justify-center gap-8 sm-max:hidden">
             <li>
               <Link
                 to="/"
-                className={`px-3 py-1 border-solid border-1 border-background-default rounded-md text-text-white hover:border-primary-default hover:text-text-color-1 ${
-                  isLinkActive("/")
-                    ? "border-primary-default text-text-color-1"
-                    : ""
-                } transition duration-300`}
+                className={`px-3 py-1 border-solid border-1 border-background-default rounded-md text-text-white hover:border-primary-default hover:text-text-color-1 transition duration-300`}
               >
                 Home
               </Link>
@@ -59,7 +55,7 @@ const Navbar = () => {
               <Link
                 to="/js_home"
                 className={`px-3 py-1 border-solid border-1 border-background-default rounded-md text-text-white hover:border-primary-default hover:text-text-color-1 ${
-                  isLinkActive("/js_home")
+                  isLinkActive("/js")
                     ? "border-primary-default text-text-color-1"
                     : ""
                 } transition duration-300`}
@@ -80,7 +76,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <ul className="flex items-center justify-center gap-8 md-max:text-caption sm-max:hidden">
+          <ul className="flex items-center justify-center gap-8 sm-max:hidden">
             <li>
               <Link to="/">
                 <svg
@@ -113,16 +109,12 @@ const Navbar = () => {
             Hamburger
           </button>
           <ul
-            className={`w-full absolute ${
+            className={`w-full absolute top-0 ${
               isNavActive ? "flex" : "hidden"
             } flex-col gap-4 py-4 bg-background-default sm-min:hidden`}
           >
             <Link
-              className={`w-full flex justify-center pb-4 border-solid border-b-1 border-background-light hover:border-text-default text-text-main hover:text-text-color-1 ${
-                isLinkActive("/")
-                  ? "border-primary-default text-primary-default"
-                  : ""
-              } transition duration-300`}
+              className={`w-full flex justify-center pb-4 border-solid border-b-1 border-background-light hover:border-text-default text-text-main hover:text-text-color-1transition duration-300`}
               to="/"
               onClick={toggleNavActive}
             >

@@ -1,22 +1,11 @@
-import { Outlet, Link } from "react-router-dom";
+import Javascript from "./right-sidebar/Javascript";
 
 const RightSidebar = () => {
   return (
     <>
-      <nav className="font-pixel text-headline-2">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/blogs">Blogs</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
-      <Outlet />
+      <aside className="w-2/12 bg-background-light font-roboto text-headline-2 font-normal text-text-main md-max:w-0 md-max:hidden">
+        <Javascript />
+      </aside>
     </>
   );
 };
