@@ -100,7 +100,7 @@ export default function App() {
       <BrowserRouter>
         <div className="w-screen h-screen flex flex-col bg-background-default items-center overflow-x-hidden">
           <Navbar />
-          <main className="w-screen h-9/10 flex justify-between gap-10 lay-max:justify-center xl-min:w-136">
+          <main className="w-screen h-9/10 flex justify-between gap-6 lay-max:justify-center xl-min:w-136">
             <LeftSidebar />
             <article className="w-7/12 bg-background-light text-text-main md-max:w-9/12">
               <Routes>

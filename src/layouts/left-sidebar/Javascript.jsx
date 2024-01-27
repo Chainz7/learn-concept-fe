@@ -8,7 +8,7 @@ function Javascript() {
 
   return (
     <div
-      className={`flex flex-col gap-6 px-9 xl-min:px-0 ${
+      className={`flex flex-col gap-6 pl-9 xl-min:px-0 ${
         isLinkActive("/js") ? "flex" : "hidden"
       }`}
     >

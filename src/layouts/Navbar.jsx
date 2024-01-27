@@ -22,7 +22,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/"
-                className={`px-3 py-1 border-solid border-1 border-background-default rounded-md text-text-white hover:border-primary-default hover:text-text-color-1 transition duration-300`}
+                className={`px-3 py-1 border-solid border-1 border-background-default rounded-md text-text-white hover:border-primary hover:text-text-color-1 transition duration-300`}
               >
                 Home
               </Link>
@@ -30,9 +30,9 @@ const Navbar = () => {
             <li>
               <Link
                 to="/html_home"
-                className={`px-3 py-1 border-solid border-1 border-background-default rounded-md text-text-white hover:border-primary-default hover:text-text-color-1 ${
+                className={`px-3 py-1 border-solid border-1 border-background-default rounded-md text-text-white hover:border-primary hover:text-text-color-1 ${
                   isLinkActive("/html_home")
-                    ? "border-primary-default text-text-color-1"
+                    ? "border-primary text-text-color-1"
                     : ""
                 } transition duration-300`}
               >
@@ -42,9 +42,9 @@ const Navbar = () => {
             <li>
               <Link
                 to="/css_home"
-                className={`px-3 py-1 border-solid border-1 border-background-default rounded-md text-text-white hover:border-primary-default hover:text-text-color-1 ${
+                className={`px-3 py-1 border-solid border-1 border-background-default rounded-md text-text-white hover:border-primary hover:text-text-color-1 ${
                   isLinkActive("/css_home")
-                    ? "border-primary-default text-text-color-1"
+                    ? "border-primary text-text-color-1"
                     : ""
                 } transition duration-300`}
               >
@@ -54,10 +54,8 @@ const Navbar = () => {
             <li>
               <Link
                 to="/js_home"
-                className={`px-3 py-1 border-solid border-1 border-background-default rounded-md text-text-white hover:border-primary-default hover:text-text-color-1 ${
-                  isLinkActive("/js")
-                    ? "border-primary-default text-text-color-1"
-                    : ""
+                className={`px-3 py-1 border-solid border-1 border-background-default rounded-md text-text-white hover:border-primary hover:text-text-color-1 ${
+                  isLinkActive("/js") ? "border-primary text-text-color-1" : ""
                 } transition duration-300`}
               >
                 JavaScript
@@ -66,9 +64,9 @@ const Navbar = () => {
             <li>
               <Link
                 to="/react_home"
-                className={`px-3 py-1 border-solid border-1 border-background-default rounded-md text-text-white hover:border-primary-default hover:text-text-color-1 ${
+                className={`px-3 py-1 border-solid border-1 border-background-default rounded-md text-text-white hover:border-primary hover:text-text-color-1 ${
                   isLinkActive("/react_home")
-                    ? "border-primary-default text-text-color-1"
+                    ? "border-primary text-text-color-1"
                     : ""
                 } transition duration-300`}
               >
@@ -123,7 +121,7 @@ const Navbar = () => {
             <Link
               className={`w-full flex justify-center pb-4 border-solid border-b-1 border-background-light hover:border-text-default text-text-main hover:text-text-color-1 ${
                 isLinkActive("/html_home")
-                  ? "border-primary-default text-primary-default"
+                  ? "border-primary text-primary-default"
                   : ""
               } transition duration-300`}
               to="/html_home"
@@ -134,7 +132,7 @@ const Navbar = () => {
             <Link
               className={`w-full flex justify-center pb-4 border-solid border-b-1 border-background-light hover:border-text-default text-text-main hover:text-text-color-1 ${
                 isLinkActive("/css_home")
-                  ? "border-primary-default text-primary-default"
+                  ? "border-primary text-primary-default"
                   : ""
               } transition duration-300`}
               to="/css_home"
@@ -145,7 +143,7 @@ const Navbar = () => {
             <Link
               className={`w-full flex justify-center pb-4 border-solid border-b-1 border-background-light hover:border-text-default text-text-main hover:text-text-color-1 ${
                 isLinkActive("/js_home")
-                  ? "border-primary-default text-primary-default"
+                  ? "border-primary text-primary-default"
                   : ""
               } transition duration-300`}
               to="/js_home"
@@ -156,7 +154,7 @@ const Navbar = () => {
             <Link
               className={`w-full flex justify-center pb-4 border-solid border-b-1 border-background-light hover:border-text-default text-text-main hover:text-text-color-1 ${
                 isLinkActive("/react_home")
-                  ? "border-primary-default text-primary-default"
+                  ? "border-primary text-primary-default"
                   : ""
               } transition duration-300`}
               to="/react_home"
@@ -165,7 +163,7 @@ const Navbar = () => {
               React
             </Link>
             <button
-              className={`w-full flex justify-center border-solid border-background-light hover:border-primary-default text-text-main hover:text-text-color-1 transition duration-300`}
+              className={`w-full flex justify-center border-solid border-background-light hover:border-primary text-text-main hover:text-text-color-1 transition duration-300`}
               onClick={toggleNavActive}
             >
               Back
